@@ -1,38 +1,176 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+body {
+    background-color: black;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .App {
+    text-align: center;
+    max-width: 728px;
+    margin: 0 auto;
+    box-shadow: -1px 4px 20px -6px rgba(0, 0,0, 0.7);
   }
-  to {
-    transform: rotate(360deg);
+
+
+  .App header {
+    background-color:#1B4F72;
+    height: 10vh;
+    min-height: 50px;
+    color: white;
+    position: fixed;
+    width: 100%;
+    max-width: 728px;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 99;
+    padding: 10px;
+    box-sizing: border-box;
   }
+
+
+  .App section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+   background-color: #151515;
+  }
+  
+  main {
+    padding: 10px;
+    height: 80vh;
+    margin: 10vh 0 8vh ;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+
+  }
+  
+  main::-webkit-scrollbar {
+    width: 0.25rem;
+  }
+  
+  main::-webkit-scrollbar-track {
+    background: black;
+  }
+  
+  main::-webkit-scrollbar-thumb {
+    background: #1B4F72  ;
+  }
+  
+  form {
+    height: 8vh;
+    position: fixed;
+    bottom: 0;
+    background-color: #5499C7 ;
+    width: 100%;
+    max-width: 728px;
+    display: flex;
+    font-size: 1.5rem;
+  }
+  
+  form button {
+    width: 15%;
+    background: none;
+  }
+  
+    
+  button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+
 }
+
+  input {
+    line-height: 1.5rem;
+    width: 100%;
+    height: 75%;
+    margin: auto;
+    font-size: 1.2rem;
+    background-color: white;
+    color: black;
+    outline: none;
+    border: none;
+    padding: 0 10px;
+    border-radius: 25px;
+    margin-left: 5px;
+  }
+  
+  button {
+    background-color: white;
+    font-weight:bold;  
+    border: none;
+    color: black;
+    padding: 12px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 1.25rem;
+    border-radius: 10px;
+    transition-duration: 0.3s;
+  }
+
+  .sign-out:hover{
+  color: #3498DB ;
+  }
+
+  .App h4{
+    margin: 0 auto;
+    color: white;
+    font-weight: bold;
+    
+  }
+
+  .sign-in {
+    max-width: 400px;
+    margin: 0 auto;
+    
+  }
+  
+  
+  ul, li {
+    text-align: left;
+    list-style: none;
+  }
+  
+  p {
+    max-width: 500px;
+    margin-bottom: 12px;
+    line-height: 24px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    position: relative;
+    color: white;
+    text-align: center;
+  }
+  
+  .message {
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  .sent {
+    flex-direction: row-reverse;
+  }
+  
+  .sent p {
+    
+    align-self: flex-end;
+    color: white;
+    background:#2E86C1 ;
+    
+  }
+  .received p {
+    color: black;
+    background-color: whitesmoke ;
+    
+  }
+  
+  img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 2px 5px;
+  }
